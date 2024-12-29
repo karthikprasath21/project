@@ -6,6 +6,8 @@ jobs:
         steps:
             - name: getcode
               uses: actions/checkout@v4
+            - name: install dependencies
+              run: npm ci
     npm:
         runs-on: ubuntu-latest
         steps:
