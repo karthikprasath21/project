@@ -10,3 +10,9 @@ jobs:
               run: npm ci
             - name: npm
               run: npm run lint
+            - name: npm
+              run: npm run test
+            - name: npm
+              run: npm run deploy
+
+
