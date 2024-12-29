@@ -5,7 +5,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: npm
-              run: npm init
+              run: npm run build
     lint:
         runs-on: ubuntu-latest
         steps:
