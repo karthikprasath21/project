@@ -1,6 +1,11 @@
 name: first
 on: [workflow_dispatch,push]
 jobs:
+    getcode:
+        runs-on: ubuntu-latest
+        steps:
+            - name: getcode
+              uses: actions/checkout@v4
     npm:
         runs-on: ubuntu-latest
         steps:
