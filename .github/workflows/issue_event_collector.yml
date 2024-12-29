@@ -1,0 +1,8 @@
+name: error
+on: issues
+jobs:
+    print-error:
+        runs-on: ubuntu-latest
+        steps:
+            - name: error-events-data
+              run: echo ${{ toJson(github.event) }}
