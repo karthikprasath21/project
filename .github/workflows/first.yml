@@ -8,11 +8,11 @@ jobs:
               uses: actions/checkout@v4
             - name: install dependencies
               run: npm ci
-            - name: npm
+            - name: lint
               run: npm run lint
-            - name: npm
+            - name: test
               run: npm run test
-            - name: npm
-              run: npm run deploy
+            - name: deploy
+              run: echo "deploying"
 
 
