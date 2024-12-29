@@ -1,6 +1,11 @@
 name: first
 on: [workflow_dispatch,push]
 jobs:
+    npm:
+        runs-on: ubuntu-latest
+        steps:
+            - name: npm
+              run: npm init
     lint:
         runs-on: ubuntu-latest
         steps:
