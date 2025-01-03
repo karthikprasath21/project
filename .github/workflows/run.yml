@@ -2,7 +2,7 @@ name: first
 on:
   push:
     branches:
-      - main
+      - master
 jobs:
     getcode:
         runs-on: ubuntu-latest
