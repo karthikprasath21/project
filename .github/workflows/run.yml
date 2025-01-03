@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - master
+    paths-ignore:
+      - index.html
 jobs:
     getcode:
         runs-on: ubuntu-latest
